@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>STUDENT INSERT FORM</title>
+	<link rel="stylesheet" href="insertstyle.css">
+</head>
+<body>
+<div style="float: right; margin: 10px;">
+	<a href="stuhomepage.php" class="back-button">BACK</a>
+</div>
+<form action="stucourse.php" method="POST" enctype="multipart/form-data" >
+  <div class="container">
+    <h1 style="color:#2467ca">INSERT FORM</h1>
+    <hr>
+	
+	<!--<p><b>USN</b></p>
+	<input type="text" name="USN" required>-->
+	
+	
+	<p><b>Course Title</b></p>
+	<input type="text" name="CourseTitle" required>
+	
+	
+	<p><b>Course Authority</b></p>
+	<input type="text" name="CourseAuthority" required>
+	
+	
+	<p><b>Certificate Issue Date</b></p>
+	<input type="date"   name="CertificateIssueDate" required>
+	
+	<p><b>Certificate Upload</b><br>*pdf only</p>
+	<input type="file" name="file" id="pdf"  accept="application/pdf" >
+	 
+	 <button type="submit" class="center" name="submit">
+	 Submit</button>
+	</div> 
+</form>
+
+</body>
+</html>

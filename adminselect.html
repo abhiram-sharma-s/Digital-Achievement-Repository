@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Admin - Select Category</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background: white;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+		}
+
+		h1 {
+			color: #333;
+			font-size: 2.5em;
+			margin-bottom: 50px;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+			font-weight: 600;
+		}
+
+		.cat {
+			display: flex;
+			gap: 50px;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			max-width: 900px;
+		}
+
+		.category-card {
+			background: white;
+			border-radius: 20px;
+			padding: 40px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+			transition: all 0.3s ease;
+			text-align: center;
+			min-width: 280px;
+			cursor: pointer;
+			text-decoration: none;
+			display: block;
+		}
+
+		.category-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+		}
+
+		.category-card img {
+			width: 200px;
+			height: 200px;
+			object-fit: contain;
+			margin-bottom: 20px;
+			transition: transform 0.3s ease;
+		}
+
+		.category-card:hover img {
+			transform: scale(1.1);
+		}
+
+		.category-card h2 {
+			color: #333;
+			font-size: 1.8em;
+			margin-top: 10px;
+			font-weight: 600;
+			transition: color 0.3s ease;
+		}
+
+		.category-card:hover h2 {
+			color: #667eea;
+		}
+
+		@media (max-width: 768px) {
+			h1 {
+				font-size: 2em;
+				margin-bottom: 30px;
+			}
+
+			.cat {
+				gap: 30px;
+			}
+
+			.category-card {
+				padding: 30px;
+				min-width: 250px;
+			}
+
+			.category-card img {
+				width: 150px;
+				height: 150px;
+			}
+
+			.category-card h2 {
+				font-size: 1.5em;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Admin - Select Category</h1>
+	<div class="cat">
+		<a href='adminhomepage1.php' class="category-card"> 
+			<img src="student.png" alt="Student">
+			<h2>STUDENT</h2>
+		</a>
+
+		<a href='adminhomepage2.php' class="category-card">
+			<img src="faculty.png" alt="Faculty">
+			<h2>FACULTY</h2>
+		</a>
+	</div>
+</body>
+</html>
